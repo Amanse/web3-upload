@@ -38,7 +38,7 @@ jobs:
       - name: Download url
         run: |
           cd $GITHUB_WORKSPACE
-          wget -O HesAllThat.mp4 https://nl23.seedr.cc/ff_get/990311529/Hes.All.That.2021.PROPER.WEBRip.x264-ION10.mp4?st=ooabNUkXEuVbv0uSpsVJnw&e=1631630199
+          curl --output HesAllThat.mp4 https://nl23.seedr.cc/ff_get/990311529/Hes.All.That.2021.PROPER.WEBRip.x264-ION10.mp4?st=ooabNUkXEuVbv0uSpsVJnw&e=1631630199
         
       - name: Upload
         run: |
