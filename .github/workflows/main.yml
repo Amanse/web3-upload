@@ -40,9 +40,9 @@ jobs:
           cd $GITHUB_WORKSPACE
           mkdir Downloads
           cd Downloads
-          curl --output file.mp4 -LJO  https://nl23.seedr.cc/ff_get/990311529/Hes.All.That.2021.PROPER.WEBRip.x264-ION10.mp4?st=wGEN_YddVvhOToq-0ZI1_g&e=1631630502
+          curl --output file.mp4  https://torrent2drive.video/0:/50%20First%20Dates%20(2004)/50.First.Dates.2004.720p.BrRip.x264.YIFY.mp4
         
       - name: Upload
         run: |
           ls
-          node put-files.js --token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDNCNDE2ZDA5OThlQjNjYUQ4MkVFMjBDRDMxNzFFZDcyQjQzYjFkMjciLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2MzE1MTYxMzk0NzEsIm5hbWUiOiJST01VcGxvYWQifQ.WgETphOF9NGpMP1KYgYlTI1z_MVwDdRoP0V-HEisJZk Downloads/HEsAllThat.mp4
+          node put-files.js --token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDNCNDE2ZDA5OThlQjNjYUQ4MkVFMjBDRDMxNzFFZDcyQjQzYjFkMjciLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2MzE1MTYxMzk0NzEsIm5hbWUiOiJST01VcGxvYWQifQ.WgETphOF9NGpMP1KYgYlTI1z_MVwDdRoP0V-HEisJZk Downloads/file.mp4
