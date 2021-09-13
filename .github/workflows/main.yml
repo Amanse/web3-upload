@@ -17,6 +17,10 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
+    environment: web3-upload-learn
+    env:
+      url: ${{ secrets.URL }}
+      token: ${{ secrets.TOKEN }}
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -40,10 +44,9 @@ jobs:
           cd $GITHUB_WORKSPACE
           mkdir Downloads
           cd Downloads
-          url=${{ secrets.URL }}
-          wget -O file.mp4 $url
+          wget -O file.mp4 ${{env.url}}
        
       - name: Upload
         run: |
           ls
-          node put-files.js --token=${{ secrets.TOKEN }} Downloads/file.mp4
+          node put-files.js --token=${{ env.TOKEN }} Downloads/file.mp4
