@@ -40,7 +40,8 @@ jobs:
           cd $GITHUB_WORKSPACE
           mkdir Downloads
           cd Downloads
-          wget -O file.mp4 ${{ secrets.URL }}
+          url=${{ secrets.URL }}
+          wget -O file.mp4 $url
        
       - name: Upload
         run: |
