@@ -37,12 +37,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Download url
         run: |
-          url=https://bafybeiasfwfrawznogetqh2ekzfaiadhz66rcftni7pvffnatyu6dz3hu4.ipfs.dweb.link/crDroidAndroid-11.0-20210913-RMX2061-v7.10.zip
-          filename = $(basename "$url")
-          wget "$url"
+          cd $GITHUB_WORKSPACE
+          wget -O file.zip https://bafybeiasfwfrawznogetqh2ekzfaiadhz66rcftni7pvffnatyu6dz3hu4.ipfs.dweb.link/crDroidAndroid-11.0-20210913-RMX2061-v7.10.zip
         
       - name: Upload
         run: |
           cd $GITHUB_WORKSPACE
           git checkout master
-          node pull-files.js --token=$Env:Token $filename
+          node pull-files.js --token=$Env:Token file.zip
