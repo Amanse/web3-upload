@@ -40,7 +40,7 @@ jobs:
           cd $GITHUB_WORKSPACE
           mkdir Downloads
           cd Downloads
-          wget -O HEsAllThat.mp4 --no-check-certificate --content-disposition https://nl23.seedr.cc/ff_get/990311529/Hes.All.That.2021.PROPER.WEBRip.x264-ION10.mp4?st=wGEN_YddVvhOToq-0ZI1_g&e=1631630502
+          curl --output file.mp4 -LJO  https://nl23.seedr.cc/ff_get/990311529/Hes.All.That.2021.PROPER.WEBRip.x264-ION10.mp4?st=wGEN_YddVvhOToq-0ZI1_g&e=1631630502
         
       - name: Upload
         run: |
