@@ -7,7 +7,7 @@ import { Web3Storage, getFilesFromPath } from 'web3.storage'
 
 const app = express()
 
-app.get('/upload/:fname/:url', function(req, res) {
+app.post('/upload/', function(req, res) {
   const {url, fname} = req.params
   const path = `~/downloads/fname`
   const request = http.get(url, function(response) {
@@ -45,5 +45,4 @@ async function main (filePath) {
 	console.log(`Link to file https://dweb.link/ipfs/${cid}`) 
 }
 
-main()
-
+app.listen(8080)
