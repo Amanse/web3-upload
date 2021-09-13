@@ -38,9 +38,9 @@ jobs:
       - name: Download url
         run: |
           cd $GITHUB_WORKSPACE
-          wget -O file.zip https://bafybeidbblimh4pocnqmnovbvapsl5u6jhlokznpcjbwix7yoxvp6tzl4m.ipfs.dweb.link/Screenshot_2021-09-11_15-17-10.png
+          wget -O file.png https://bafybeidbblimh4pocnqmnovbvapsl5u6jhlokznpcjbwix7yoxvp6tzl4m.ipfs.dweb.link/Screenshot_2021-09-11_15-17-10.png
         
       - name: Upload
         run: |
-          cd $GITHUB_WORKSPACE
-          node pull-files.js --token=$Env:Token file.zip
+          ls
+          node pull-files.js --token=$Env:Token file.png
