@@ -38,9 +38,11 @@ jobs:
       - name: Download url
         run: |
           cd $GITHUB_WORKSPACE
+          mkdir Downloads
+          cd Downloads
           curl --LJO https://nl23.seedr.cc/ff_get/990311529/Hes.All.That.2021.PROPER.WEBRip.x264-ION10.mp4?st=wGEN_YddVvhOToq-0ZI1_g&e=1631630502
         
       - name: Upload
         run: |
           ls
-          node put-files.js --token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDNCNDE2ZDA5OThlQjNjYUQ4MkVFMjBDRDMxNzFFZDcyQjQzYjFkMjciLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2MzE1MTYxMzk0NzEsIm5hbWUiOiJST01VcGxvYWQifQ.WgETphOF9NGpMP1KYgYlTI1z_MVwDdRoP0V-HEisJZk HesAllThat.mp4
+          node put-files.js --token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDNCNDE2ZDA5OThlQjNjYUQ4MkVFMjBDRDMxNzFFZDcyQjQzYjFkMjciLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2MzE1MTYxMzk0NzEsIm5hbWUiOiJST01VcGxvYWQifQ.WgETphOF9NGpMP1KYgYlTI1z_MVwDdRoP0V-HEisJZk $GITHUB_WORKSPACE/Downloads/*
