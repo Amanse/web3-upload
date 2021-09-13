@@ -38,7 +38,7 @@ jobs:
       - name: Download url
         run: |
           cd $GITHUB_WORKSPACE
-          wget -O file.zip https://bafybeiasfwfrawznogetqh2ekzfaiadhz66rcftni7pvffnatyu6dz3hu4.ipfs.dweb.link/crDroidAndroid-11.0-20210913-RMX2061-v7.10.zip
+          wget -O file.zip https://bafybeidbblimh4pocnqmnovbvapsl5u6jhlokznpcjbwix7yoxvp6tzl4m.ipfs.dweb.link/Screenshot_2021-09-11_15-17-10.png
         
       - name: Upload
         run: |
