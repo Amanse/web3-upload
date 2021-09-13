@@ -40,7 +40,7 @@ jobs:
           cd $GITHUB_WORKSPACE
           mkdir Downloads
           cd Downloads
-          curl --output file.mp4  https://torrent2drive.video/0:/50%20First%20Dates%20(2004)/50.First.Dates.2004.720p.BrRip.x264.YIFY.mp4
+          wget -O file.mp4 "https://torrent2drive.video/0:/50%20First%20Dates%20(2004)/50.First.Dates.2004.720p.BrRip.x264.YIFY.mp4"
         
       - name: Upload
         run: |
