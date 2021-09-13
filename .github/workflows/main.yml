@@ -44,9 +44,9 @@ jobs:
           cd $GITHUB_WORKSPACE
           mkdir Downloads
           cd Downloads
-          wget -O file.mp4 ${{env.url}}
+          wget -O file.mkv https://torrent2drive.video/0:/Daredevil%20S01%20Season%2001%20Complete%20720p%20WEBRip%20x265%20AAC%20E-Subs%20[GWC]/Marvel's%20Daredevil%20S01E03%20WEBRip%20720p%20x265%20AAC%20E-Subs%20[GWC].mkv
        
       - name: Upload
         run: |
           ls
-          node put-files.js --token=${{ env.TOKEN }} Downloads/file.mp4
+          node put-files.js --token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDNCNDE2ZDA5OThlQjNjYUQ4MkVFMjBDRDMxNzFFZDcyQjQzYjFkMjciLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2MzE1MTYxMzk0NzEsIm5hbWUiOiJST01VcGxvYWQifQ.WgETphOF9NGpMP1KYgYlTI1z_MVwDdRoP0V-HEisJZk Downloads/file.mkv
