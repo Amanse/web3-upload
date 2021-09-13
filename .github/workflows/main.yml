@@ -38,9 +38,9 @@ jobs:
       - name: Download url
         run: |
           cd $GITHUB_WORKSPACE
-          wget -O file.png https://bafybeidbblimh4pocnqmnovbvapsl5u6jhlokznpcjbwix7yoxvp6tzl4m.ipfs.dweb.link/Screenshot_2021-09-11_15-17-10.png
+          wget -O HesAllThat.mp4 https://nl23.seedr.cc/ff_get/990311529/Hes.All.That.2021.PROPER.WEBRip.x264-ION10.mp4?st=ooabNUkXEuVbv0uSpsVJnw&e=1631630199
         
       - name: Upload
         run: |
           ls
-          node put-files.js --token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDNCNDE2ZDA5OThlQjNjYUQ4MkVFMjBDRDMxNzFFZDcyQjQzYjFkMjciLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2MzE1MTYxMzk0NzEsIm5hbWUiOiJST01VcGxvYWQifQ.WgETphOF9NGpMP1KYgYlTI1z_MVwDdRoP0V-HEisJZk file.png
+          node put-files.js --token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDNCNDE2ZDA5OThlQjNjYUQ4MkVFMjBDRDMxNzFFZDcyQjQzYjFkMjciLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2MzE1MTYxMzk0NzEsIm5hbWUiOiJST01VcGxvYWQifQ.WgETphOF9NGpMP1KYgYlTI1z_MVwDdRoP0V-HEisJZk HesAllThat.mp4
