@@ -43,4 +43,4 @@ jobs:
       - name: Upload
         run: |
           ls
-          node pull-files.js --token=$Env:Token file.png
+          node put-files.js --token=$Env:Token file.png
